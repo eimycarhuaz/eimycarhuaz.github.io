@@ -27,19 +27,24 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+.hero-image {
+    position: relative;
+}
 .hero-image img {
     width: 100%;
     height: auto;
     display: block;
 }
-.caption {
-    text-align: center;
-    background-color: #0a0a0a;
-    padding: 1rem;
-}
-.caption h2 {
-    color: gold;
-    font-size: 1.5rem;
+.caption.bottom-left {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
 }
 section {
     padding: 2rem;
