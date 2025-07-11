@@ -46,8 +46,28 @@ nav ul li a {
     padding: 0.6rem 1rem;
     border-radius: 5px;
 }
-section {
-    padding: 2rem;
+.about-section {
+    background-color: #111;
+    padding: 3rem 2rem;
+}
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.about-photo img {
+    width: 300px;
+    border-radius: 10px;
+    border: 3px solid #cc99ff;
+}
+.about-text-box {
+    max-width: 600px;
+    background-color: #1a0033;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: #f2f2f2;
 }
 footer {
     background-color: #111;
