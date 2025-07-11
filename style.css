@@ -44,6 +44,15 @@ header {
     display: block;
 }
 
+.caption {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #ccc;
+    font-style: italic;
+}
+
 .content-section {
     display: flex;
     align-items: flex-start;
