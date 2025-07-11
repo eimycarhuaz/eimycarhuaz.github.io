@@ -1,77 +1,84 @@
-
 body {
     margin: 0;
-    font-family: 'Playfair Display', serif;
-    background-color: #0a0a0a;
-    color: #f2f2f2;
+    font-family: 'Georgia', serif;
+    background-color: #111;
+    color: #fff;
 }
+
 header {
-    background: linear-gradient(90deg, #000000, #1a0033);
-    color: gold;
-    padding: 2rem;
+    background-color: #1a001a;
     text-align: center;
+    padding: 20px;
+    color: gold;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 1rem;
     display: flex;
     justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
-nav ul li {
-    margin: 0 1rem;
-}
+
 nav ul li a {
-    color: #cc99ff;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
-.hero-image {
+
+.hero {
     position: relative;
+    text-align: left;
 }
-.hero-image img {
+
+.hero img {
     width: 100%;
     height: auto;
     display: block;
 }
-.caption.bottom-left {
+
+.caption {
     position: absolute;
-    bottom: 20px;
-    left: 30px;
-    font-size: 0.85rem;
+    bottom: 15px;
+    left: 20px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffd700;
     font-weight: bold;
-    color: #f2f2f2;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 0.6rem 1rem;
-    border-radius: 5px;
 }
-.about-section {
-    background-color: #111;
-    padding: 3rem 2rem;
+
+.about {
+    padding: 40px 20px;
 }
+
 .about-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    gap: 2rem;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.about-photo img {
+
+.profile-photo {
     width: 300px;
     border-radius: 10px;
-    border: 3px solid #cc99ff;
 }
-.about-text-box {
-    max-width: 600px;
-    background-color: #1a0033;
-    padding: 1.5rem;
+
+.about-text {
+    max-width: 700px;
+    background-color: #2a0033;
+    padding: 20px;
     border-radius: 10px;
-    color: #f2f2f2;
 }
+
 footer {
-    background-color: #111;
     text-align: center;
-    padding: 1rem;
-    color: #ccc;
+    padding: 20px;
+    background-color: #111;
+    color: #999;
+    font-size: 14px;
 }
