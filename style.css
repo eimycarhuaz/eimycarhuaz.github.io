@@ -1,47 +1,211 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1a0033;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111;
     color: white;
 }
-.section-title {
+
+header {
+    background-color: #210035;
+    padding: 30px 0 10px;
     text-align: center;
-    font-size: 2em;
-    margin: 40px 0 20px;
 }
+
+.main-title {
+    color: gold;
+    font-size: 36px;
+    margin: 0;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #b78fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #ccc;
+    font-style: italic;
+}
+
+.content-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #1c0030;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.profile-img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #b78fff;
+    margin: 20px;
+}
+
+.about-text {
+    max-width: 600px;
+    margin: 20px;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.about-text p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
 .video-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding: 20px;
+    margin-top: 30px;
 }
+
 .video-item {
-    position: relative;
-    width: 280px;
+    max-width: 300px;
+    text-align: center;
 }
+
 .video-item img {
     width: 100%;
     border-radius: 10px;
+    border: 2px solid #b78fff;
+    transition: transform 0.3s ease;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+
+.video-item img:hover {
+    transform: scale(1.05);
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 1rem;
     color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 15px;
-    border-radius: 10px;
 }
-.video-item:hover .overlay {
-    opacity: 1;
-}
+<section id="film" class="content-section">
+  <h2 class="section-heading">Narrative Filmmaking</h2>
+  <div class="video-gallery">
+
+    <!-- 1 -->
+    <div class="video-item">
+      <a href="https://youtu.be/w7c9paGzZ3I?si=74bmWVUDRFpLlCeC" target="_blank">
+        <img src="https://img.youtube.com/vi/w7c9paGzZ3I/hqdefault.jpg" alt="My Home Home">
+        <div class="overlay">
+          <h3>My Home Home (+29k views)</h3>
+          <p>Produced, filmed, directed, edited — short film with original score (which I also directed)</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 2 -->
+    <div class="video-item">
+      <a href="https://youtu.be/EdaLxxdNp5Q?si=elgRae3kk397dYlh" target="_blank">
+        <img src="https://img.youtube.com/vi/EdaLxxdNp5Q/hqdefault.jpg" alt="Siren">
+        <div class="overlay">
+          <h3>Siren</h3>
+          <p>Wrote, directed, and made set design for 5-min short film</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 3 -->
+    <div class="video-item">
+      <a href="https://youtu.be/_2mZskBPGh8?si=_5WD5j7IcG1s4Ul9" target="_blank">
+        <img src="https://img.youtube.com/vi/_2mZskBPGh8/hqdefault.jpg" alt="Riverdale Scene Recreation">
+        <div class="overlay">
+          <h3>Riverdale Scene Recreation</h3>
+          <p>Directed, filmed, and edited a scene from Riverdale, making my own directing decisions</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 4 -->
+    <div class="video-item">
+      <a href="https://youtu.be/jOEIZyes_Po?si=0jNEr5u0Zlznp6vt" target="_blank">
+        <img src="https://img.youtube.com/vi/jOEIZyes_Po/hqdefault.jpg" alt="JUST Scene Recreation">
+        <div class="overlay">
+          <h3>JUST Scene Recreation</h3>
+          <p>Adapted a scene from an original screenplay. Directed, filmed, edited, and created my own version</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 5 -->
+    <div class="video-item">
+      <a href="https://youtu.be/dbUETBeKP70?si=S3R3_YgGuBijw2VB" target="_blank">
+        <img src="https://img.youtube.com/vi/dbUETBeKP70/hqdefault.jpg" alt="The Girlfriend">
+        <div class="overlay">
+          <h3>The Girlfriend</h3>
+          <p>Directed, edited, and wrote a no-dialogue 5-min short film</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 6 -->
+    <div class="video-item">
+      <a href="https://youtu.be/Xk5ZnMWkIU4?si=lqHAqD6-O5SC1HB4" target="_blank">
+        <img src="https://img.youtube.com/vi/Xk5ZnMWkIU4/hqdefault.jpg" alt="l0ve is complic4ted">
+        <div class="overlay">
+          <h3>l0ve is complic4ted</h3>
+          <p>Directed, filmed, and edited a no-dialogue 2-min short film</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 7 -->
+    <div class="video-item">
+      <a href="https://youtu.be/ynmUORlgrfM?si=pS4L_HcHhvjd8LZP" target="_blank">
+        <img src="https://img.youtube.com/vi/ynmUORlgrfM/hqdefault.jpg" alt="The Audition - one word exercise">
+        <div class="overlay">
+          <h3>The Audition – one word exercise</h3>
+          <p>Directed, filmed, designed set — class exercise using one specific dialogue line</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 8 -->
+    <div class="video-item">
+      <a href="https://youtu.be/OFWODjirlDU?si=pd38jySNW0GBnLQH" target="_blank">
+        <img src="https://img.youtube.com/vi/OFWODjirlDU/hqdefault.jpg" alt="Visual Experiment Exercise">
+        <div class="overlay">
+          <h3>Visual Experiment Exercise</h3>
+          <p>Directed, filmed, and edited an experimentation video for class</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
