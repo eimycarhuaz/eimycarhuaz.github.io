@@ -84,34 +84,3 @@ header {
     font-size: 17px;
     line-height: 1.6;
 }
-
-
-.video-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.video-item {
-    max-width: 300px;
-    text-align: center;
-}
-
-.video-item img {
-    width: 100%;
-    border-radius: 10px;
-    border: 2px solid #b78fff;
-    transition: transform 0.3s ease;
-}
-
-.video-item img:hover {
-    transform: scale(1.05);
-}
-
-.caption {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: white;
-}
